@@ -162,11 +162,9 @@ pub fn list_by_id(id: u32) -> Result<String> {
   }
 
   let mut result = "Current todo:\n\n".to_string();
-  for item in items {
-    if item.id() == id {
-      result += &item.to_prettier_string();
-      result += "\n";
-    }
+  if let Some(item) = items.into_iter().find(|item| item.id() == id) {
+    result += &item.to_prettier_string();
+    result += "\n";
   }
 
   Ok(result)
