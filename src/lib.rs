@@ -116,9 +116,6 @@ fn greating() {
   println!("{}", "欢迎使用TODO命令行工具".bold().magenta().italic());
   println!("{}", "功能介绍:".green());
   println!("{} {}", "# 帮助信息:".bold().blue(), "-h/--help");
-  println!("{} {}", "# 输入操作指令:".bold().blue(), "-o/--operate <<指令[possible values: get, add, completed, uncompleted, restore, delete, destory, clear]>>");
-  println!("{} {}", "# 输入状态指令:".bold().blue(), "-s/--status <<指令[possible values: all, completed, uncompleted, deleted]>>");
-  println!("{} {}", "# 操作指令参数:".bold().blue(), "-m/--message <<动作[possible values: all, todo事项的id, 事项描述等]>>");
 }
 
 
